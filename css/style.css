@@ -1,0 +1,32 @@
+@import url(components/header.css);
+@import url(components/card.css);
+@import url(components/button.css);
+@import url(components/form.css);
+@import url(components/profile.css);
+@import url(components/footer.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary: #c5d0c1;
+  --secondary: #9eadab;
+  --accent: #dea190;
+  --base: #f8ecde;
+}
+
+body {
+  background-color: var(--base);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4em;
+  margin: 3em 0em 6em 0em;
+}
