@@ -1,0 +1,60 @@
+.card {
+  justify-self: center;
+  width: 35em;
+  height: 22em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--base);
+  border: 0.5px black solid;
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 1em;
+  position: relative;
+}
+
+.card__bookmark {
+  position: absolute;
+  right: 15px;
+  top: -20px;
+}
+
+.filled {
+  color: var(--secondaccent);
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.card__heading {
+  font-size: 1rem;
+}
+
+.card__text {
+  font-size: 1.25em;
+  margin: 1.25em 0em 1.25em 0em;
+}
+
+.card__tags {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.card__tag {
+  background-color: var(--secondaccent);
+  border: 0px var(--secondaccent) solid;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  text-decoration: none;
+  color: var(--base);
+}
+
+.hidden {
+  display: none;
+}
