@@ -1,0 +1,38 @@
+.createform {
+  justify-self: center;
+  grid-row: 2/ 3;
+  display: flex;
+  width: 40em;
+  height: 45em;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  border: 1px black solid;
+  box-shadow: 10px 10px 8px #888888;
+  padding: 2em;
+}
+
+fieldset {
+  border: 0px solid var(--base);
+  display: flex;
+  flex-direction: column;
+  gap: 1.15em;
+  text-align: center;
+}
+
+textarea {
+  height: 7em;
+  width: 25em;
+  border-radius: 1em;
+}
+
+input {
+  height: 4em;
+  width: 25em;
+  border-radius: 1em;
+}
+
+input[placeholder] {
+  padding: 1em;
+  text-align: center;
+}

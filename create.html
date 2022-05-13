@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Create Questions</title>
+  </head>
+  <body>
+    <header>
+      <h1>CREATE</h1>
+    </header>
+    <main>
+      <form class="createform" aria-label="Create your own question and answer">
+        <fieldset>
+          <label for="question">Create your own question:</label>
+          <textarea id="question" name="question" required></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="answer">Create your own answer:</label>
+          <textarea id="answer" name="answer" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <label for="tags">Choose the tags for your question:</label>
+          <input
+            id="tags"
+            name="tags"
+            type="text"
+            placeholder="geography, history, etc."
+          />
+        </fieldset>
+
+        <button class="button" value="Submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a href="index.html" aria-label="Got to Home"
+          ><span class="navbar__item material-icons md-48"> home </span></a
+        >
+        <a href="bookmarks.html" aria-label="Go to bookmarks"
+          ><span data-js="bookmark" class="navbar__item material-icons md-48">
+            bookmark
+          </span></a
+        >
+
+        <a href="create.html" aria-label="Go to create page"
+          ><span class="navbar__item material-icons md-48"> edit_note </span></a
+        >
+
+        <a href="profiles.html" aria-label="Got to profile"
+          ><span class="navbar__item material-icons md-48">
+            account_circle
+          </span></a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>
