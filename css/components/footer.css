@@ -15,5 +15,5 @@ footer {
 }
 
 .navbar__item {
-  color: black;
+  color: var(--base);
 }

@@ -1,9 +1,9 @@
-/*
-Color Theme: 
-darkgreen: #3E5959
-bluish green: #76888A
-beige: #F2EDDC
-pale red: #D9A08B
+/* Color Theme Swatches in Hex 
+.color-theme_IMG-20220421-WA0000-1-hex { color: #1D5BA4; }
+.color-theme_IMG-20220421-WA0000-2-hex { color: #2AA0C6; }
+.color-theme_IMG-20220421-WA0000-3-hex { color: #BFDBEF; }
+.color-theme_IMG-20220421-WA0000-4-hex { color: #A0BDCF; }
+.color-theme_IMG-20220421-WA0000-5-hex { color: #FFB335; }
 */
 
 @import url(components/header.css);
@@ -21,14 +21,9 @@ pale red: #D9A08B
 }
 
 :root {
-  --primary: #3a3368;
-  --accent: #ecb338;
-  --secondaccent: #b24b44;
-  --base: #f5f3f0;
-}
-
-body {
-  background-color: var(--base);
+  --primary: #1d5ba4;
+  --secondary: #a0bdcf;
+  --accent: #ffb335;
 }
 
 main {
