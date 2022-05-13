@@ -31,12 +31,12 @@
 }
 
 .description__tag {
-  background-color: #d7e5d2;
-  border: 0px #d7e5d2 solid;
+  background-color: var(--secondaccent);
+  border: 0px var(--secondaccent) solid;
   border-radius: 0.25em;
   padding: 0.25em;
   text-decoration: none;
-  color: black;
+  color: var(--base);
 }
 
 .button--logout {
