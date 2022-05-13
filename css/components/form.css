@@ -1,6 +1,6 @@
 .createform {
   justify-self: center;
-  grid-row: 2/ 3;
+  grid-row: 1/ 2;
   display: flex;
   width: 40em;
   height: 45em;
@@ -10,10 +10,11 @@
   border: 1px black solid;
   box-shadow: 10px 10px 8px #888888;
   padding: 2em;
+  color: black;
 }
 
 fieldset {
-  border: 0px solid var(--base);
+  border: 0px solid black;
   display: flex;
   flex-direction: column;
   gap: 1.15em;

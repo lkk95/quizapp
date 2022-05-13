@@ -36,5 +36,5 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   gap: 4em;
-  margin: 3em 0em 6em 0em;
+  margin: 3em 0em 0em 0em;
 }
