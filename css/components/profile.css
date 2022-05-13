@@ -1,0 +1,46 @@
+.intro {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 6em;
+  width: 500px;
+  height: 270px;
+}
+
+.intro__img {
+  border-radius: 50%;
+}
+
+.description {
+  justify-self: center;
+  width: 500px;
+  height: 270px;
+  text-align: center;
+}
+
+.description__heading {
+  margin-top: 2em;
+}
+
+.description__tags {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.description__tag {
+  background-color: var(--secondaccent);
+  border: 0px var(--secondaccent) solid;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  text-decoration: none;
+  color: var(--base);
+}
+
+.button--logout {
+  justify-self: center;
+  grid-column: 1/ 2;
+  grid-row: 3 / auto;
+}
