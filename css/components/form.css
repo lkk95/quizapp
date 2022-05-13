@@ -23,14 +23,12 @@ fieldset {
 textarea {
   height: 7em;
   width: 25em;
-  border: var(--secondary) solid 1px;
   border-radius: 1em;
 }
 
 input {
   height: 4em;
   width: 25em;
-  border: var(--secondary) solid 1px;
   border-radius: 1em;
 }
 
