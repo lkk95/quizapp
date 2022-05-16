@@ -144,11 +144,17 @@
         >
           <fieldset>
             <label for="question">Create your own question:</label>
-            <textarea id="question" name="question"></textarea>
+            <p class="hidden" data-js="questcounter"></p>
+            <textarea
+              id="question"
+              name="question"
+              data-js="questinput"
+            ></textarea>
           </fieldset>
           <fieldset>
             <label for="answer">Create your own answer:</label>
-            <textarea id="answer" name="answer"></textarea>
+            <p class="hidden" data-js="answcounter"></p>
+            <textarea id="answer" name="answer" data-js="answinput"></textarea>
           </fieldset>
 
           <fieldset>
