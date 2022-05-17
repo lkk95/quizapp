@@ -10,31 +10,31 @@ const profilebutton = document.querySelector('[data-js="profiles"]');
 
 function spa() {
   homebutton.addEventListener('click', () => {
-    homepage.classList.remove('hidden');
-    bookmarkspage.classList.add('hidden');
-    createpage.classList.add('hidden');
-    profilespage.classList.add('hidden');
+    homepage.classList.remove('hiddenpage');
+    bookmarkspage.classList.add('hiddenpage');
+    createpage.classList.add('hiddenpage');
+    profilespage.classList.add('hiddenpage');
   });
 
   bookmarkbutton.addEventListener('click', () => {
-    homepage.classList.add('hidden');
-    bookmarkspage.classList.remove('hidden');
-    createpage.classList.add('hidden');
-    profilespage.classList.add('hidden');
+    homepage.classList.add('hiddenpage');
+    bookmarkspage.classList.remove('hiddenpage');
+    createpage.classList.add('hiddenpage');
+    profilespage.classList.add('hiddenpage');
   });
 
   createbutton.addEventListener('click', () => {
-    homepage.classList.add('hidden');
-    bookmarkspage.classList.add('hidden');
-    createpage.classList.remove('hidden');
-    profilespage.classList.add('hidden');
+    homepage.classList.add('hiddenpage');
+    bookmarkspage.classList.add('hiddenpage');
+    createpage.classList.remove('hiddenpage');
+    profilespage.classList.add('hiddenpage');
   });
 
   profilebutton.addEventListener('click', () => {
-    homepage.classList.add('hidden');
-    bookmarkspage.classList.add('hidden');
-    createpage.classList.add('hidden');
-    profilespage.classList.remove('hidden');
+    homepage.classList.add('hiddenpage');
+    bookmarkspage.classList.add('hiddenpage');
+    createpage.classList.add('hiddenpage');
+    profilespage.classList.remove('hiddenpage');
   });
 }
 
