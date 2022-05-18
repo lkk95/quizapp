@@ -6,4 +6,5 @@
   border: 0px var(--accent) solid;
   border-radius: 0.5em;
   font-size: 1rem;
+  cursor: pointer;
 }
