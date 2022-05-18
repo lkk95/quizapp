@@ -10,42 +10,42 @@ spa();
 //Create cards object
 const cards = [
   {
-    cardicon: 'bookmark',
-    cardheading: 'QUESTION',
     cardtext: 'Which desert is the biggest in the world?',
-    cardbutton: 'Show Answer',
     cardanswer: 'Actually the biggest desert in the world is the Antarctic.',
-    cardtag1: 'desert',
-    cardtag2: 'nature',
+    cardtags: ['desert', 'nature'],
   },
   {
-    cardicon: 'bookmark',
-    cardheading: 'QUESTION',
     cardtext: 'When did the French Revolution start?',
-    cardbutton: 'Show Answer',
     cardanswer: 'The French Revolution started in 1789.',
-    cardtag1: 'history',
-    cardtag2: 'early modern times',
+    cardtags: ['history', 'early modern times'],
   },
   {
-    cardicon: 'bookmark',
-    cardheading: 'QUESTION',
     cardtext: 'Who is Germanys current minister of foreign affairs?',
-    cardbutton: 'Show Answer',
     cardanswer: 'Annalena Baerbock',
-    cardtag1: 'politics',
-    cardtag2: 'German government',
+    cardtags: ['politics', 'German government'],
   },
   {
-    cardicon: 'bookmark',
-    cardheading: 'QUESTION',
     cardtext: 'Which band published the song "Smoke on the Water" in 1971?',
-    cardbutton: 'Show Answer',
     cardanswer: 'Pink Floyd',
-    cardtag1: 'music',
-    cardtag2: 'british rock',
+    cardtags: ['music', 'british rock'],
   },
 ];
+
+//Fetch card data of Opentdb
+/*
+const apiURL = 'https://opentdb.com/api.php?amount=15&type=boolean';
+
+fetchQuestions(apiURL);
+
+async function fetchQuestions(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error.message);
+  }
+}*/
 
 //Append cards to homepage section in index_spa.html
 cards.forEach(dynamicCards);
