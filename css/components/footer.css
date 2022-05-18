@@ -16,4 +16,5 @@ footer {
 
 .navbar__item {
   color: var(--base);
+  cursor: pointer;
 }
