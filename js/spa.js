@@ -21,6 +21,9 @@ function spa() {
     bookmarkspage.classList.remove('hidden');
     createpage.classList.add('hidden');
     profilespage.classList.add('hidden');
+    const bookmarkedCards = questionCards.filter(questionCard => {
+      return questionCard.isBookmarked === true;
+    });
   });
 
   createbutton.addEventListener('click', () => {

@@ -4,9 +4,9 @@ import { spa } from './spa.js';
 import { counter } from './counter.js';
 import { dynamicCards } from './dynamicCards.js';
 //import { fetchQuestions } from './fetchQuestions';
-
+let questionCards = [];
 //Load Pages in Single Page Application
-spa();
+spa(questionCards);
 
 //Fetch data from Opentdb, create dynamic cards from data and implement bookmarks and answer toggles
 
@@ -18,11 +18,11 @@ async function fetchQuestions(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.results);
-    //data.results.forEach(element => {
-    //element.isBookmarked = false;
-    //});
-    dynamicCards(data.results);
+    questionCards = data.results.map(card => {
+      return { ...card, isBookmarked: false, id: Math.random() + '' };
+    });
+    console.log(questionCards);
+    dynamicCards(questionCards);
     document.querySelectorAll('[data-js="bookmark"]').forEach(bookmarkFunction);
     document.querySelectorAll('[data-js="button"]').forEach(toggleAnswer);
   } catch (error) {
